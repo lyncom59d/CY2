@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog lyncom</title>
+    <style>
+        header{
+            background-color: black;
+            color: white;
+            text-align: center;
+
+        }
+        svg{
+            border: 1px solid black;
+            display: block;
+            margin: auto;
+        }
+        article{
+            border: 1px solid black;
+            width: 600px;
+            margin: auto;
+            background-color: teal;
+        }
+        video{
+            width: 600px;
+            height: 400px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>blog do lyncom</h1>
+        <p>aqui vc encrontra informações sobre tecnologia, esportes e games.</p>
+    </header>
+
+    <nav>
+        <a href="../aula02/minhapagina.html">contato</a>
+        <a href="../aula03/tabela001.html">tabela</a>
+        <a href="../aula03/tabela002.html">produtos 2</a>
+    </nav>
+    <article>
+        <section class="figura">
+            <h2>Exercicio com SVG</h2>
+            <svg width="300" height="300">
+                <rect x="100" y="25" width="100" height="100" fill="blue"></rect>
+                <circle r="25" cx="150" cy="160">
+                    <animate attributeName="r" from="40" to="20" dur="0.005s" repeatCount="indefinite"></animate>
+                </circle>
+                <polygon points="150,280 100,200 200,200" fill="purple"> </polygon>
+            
+            </svg>
+
+        </section>
+        <section class="audio">
+            <h2>exercicio com audio</h2>
+            <audio src="midia/hino-coritiba.mp3" autoplay="autoplay" controls></audio>
+
+        </section>
+        <section class="video">
+            <h2>exercicio com video <video src="midia/ctrlplay.mp4" controls poster="midia/poster.jpg"></video></h2>
+
+        </section>
+
+    </article>
+
+    <footer>
+        <p>pagina criada pelo lyncom</p>
+    </footer>
+</body>
+</html>
